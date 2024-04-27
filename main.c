@@ -16,8 +16,9 @@ int main(void) {
 
 	do{
 		system("clear");
-		printf("\n---------------\n");
-	 	printf("Escolha uma opção (Algoritmo):\n");
+		printf("  --- Estrutura de Dados ---\n");
+		printf("\n--------------------------\n");
+		printf("Escolha uma opção de Algoritmo:\n");
 		printf(" 1 - Vetores\n");
 		printf(" 2 - Matrizes\n");
 		printf(" 3 - Ordenação Método Bolha\n");
