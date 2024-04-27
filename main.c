@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "vetores.h"
 #include "matrizes.h"
+#include "fila.h"
 
 void menu_vetor();		//	vetores.h
 void menu_matriz();		//	matrizes.h
@@ -39,6 +40,8 @@ int main(void) {
 		switch(opcao){
 			case 1:		menu_vetor();		break;
 			case 2: 	menu_matriz();		break;
+			case 7: 	menu_fila();		break;
+			case 0:		printf("\nObrigado por usar o sistema\n"); break;
 			default:	erro_menu();		break;
 		}
 	}while(opcao != 0);

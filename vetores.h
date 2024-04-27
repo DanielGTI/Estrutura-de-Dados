@@ -22,16 +22,14 @@ void menu_vetor() {
 		printf("Escolha a sua opção: ");
 	
 		scanf("%d", &opcao);
-		printf("---- VETORES ----\n");
+		printf("--- VETORES ---\n");
 		printf("\n---------------\n\n");
 		switch(opcao){
 			case 1:		vetor_exemplo_1();	break;
 			case 2:		vetor_exemplo_2();	break;
 			default:	erro_menu_vetor();		break;
 		}
-	}while(opcao != 0);
-	
-	
+	}while(opcao != 0);	
 }
 
 void vetor_exemplo_1() {
