@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "vetores.h"
 #include "matrizes.h"
+#include "busca_sequencial.h"
 #include "fila.h"
 
 void menu_vetor();		//	vetores.h
@@ -28,8 +29,8 @@ int main(void) {
 		printf(" 6 - Ordenação Exercícios\n");
 		printf(" 7 - Fila\n");
 		printf(" 8 - Pilha\n");
-		printf(" 9 - Busca Binária\n");
-		printf("10 - Busca Sequencial\n");
+		printf(" 9 - Busca Sequencial\n");
+		printf("10 - Busca Binária\n");
 		printf("11 - Lista\n");
 		printf("12 - Arvore\n");
 		printf(" 0 - Sair\n");
@@ -38,9 +39,10 @@ int main(void) {
 		scanf("%d", &opcao);
 	
 		switch(opcao){
-			case 1:		menu_vetor();		break;
-			case 2: 	menu_matriz();		break;
-			case 7: 	menu_fila();		break;
+			case 1:		menu_vetor();				break;
+			case 2: 	menu_matriz();				break;
+			case 7: 	menu_fila();				break;
+			case 9: 	menu_busca_sequencial();	break;
 			case 0:		printf("\nObrigado por usar o sistema\n"); break;
 			default:	erro_menu();		break;
 		}
