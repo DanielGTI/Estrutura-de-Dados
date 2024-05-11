@@ -3,6 +3,7 @@
 #include "vetores.h"
 #include "matrizes.h"
 #include "busca_sequencial.h"
+#include "busca_binaria.h"
 #include "fila.h"
 
 void menu_vetor();		//	vetores.h
@@ -43,6 +44,7 @@ int main(void) {
 			case 2: 	menu_matriz();				break;
 			case 7: 	menu_fila();				break;
 			case 9: 	menu_busca_sequencial();	break;
+			case 10: 	menu_busca_binaria();		break;
 			case 0:		printf("\nObrigado por usar o sistema\n"); break;
 			default:	erro_menu();		break;
 		}
